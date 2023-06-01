@@ -86,22 +86,17 @@ rem Crea i file iniziali
 ) > "js/script.js"
 ```
 
-3. Consenti l'esecuzione di tutti i file batch. Apri la PowerShell e esegui il seguente comando:
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
-```
-
-4. Crea un nuovo profilo per la PowerShell con il seguente comando:
+3. Crea un nuovo profilo per la PowerShell con il seguente comando:
 ```powershell
 if (!(Test-Path -Path $PROFILE)) { New-Item -ItemType File -Path $PROFILE -Force }
 ```
 
-5. Apri il profilo con il seguente comando nella Powershell:
+4. Apri il profilo con il seguente comando nella Powershell:
 ```powershell
 notepad $PROFILE
 ```
 
-6. Inserisci il seguente codice all'interno del file di testo:
+5. Inserisci il seguente codice all'interno del file di testo:
 ```php
 function SampleWebProject {
     param (
@@ -112,9 +107,9 @@ function SampleWebProject {
     Start-Process -FilePath $scriptPath -WorkingDirectory (Get-Location) -ArgumentList $Title
 }
 ```
-7. Salva e chiudi
+6. Salva e chiudi
 
-8. Apri il Prompt dei comandi (cmd) o PowerShell e digita "SampleWebProject" seguito dal titolo del tuo progetto come parametro. Ad esempio:
+7. Apri il Prompt dei comandi (cmd) o PowerShell e digita "SampleWebProject" seguito dal titolo del tuo progetto come parametro. Ad esempio:
 ```powershell
 SampleWebProject MyWebProject
 ```
