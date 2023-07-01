@@ -22,7 +22,7 @@ Il progetto include anche:
 Per installare il sample, segui i seguenti passaggi:
 
 1. Crea una cartella chiamata "Scripts" nel disco C:.
-2. Crea un file chiamato "SampleWebProject.bat" con il seguente codice:
+2. Copia il file chiamato "SampleWebProject.bat" con il seguente codice dentro la cartella scripts:
 
 ```bat
 @echo off
